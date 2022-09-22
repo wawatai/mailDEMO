@@ -1,0 +1,44 @@
+$table_thBG: #0d0d0d;
+$table_tdBG_1: #ffffff;
+$table_tdBG_2: #0d0d0d;
+$table_tdBG_3: #1e1e1e;
+$table_titleColor_1: #0d0d0d;
+$table_titleColor_2: #fb770a;
+$table_Border_1: #fb770a;
+$table_mainColor_1: #424242;
+
+$table_link_BG: #1f1f1f;
+$table_link_TitleColor: #ffffff;
+$table_link_mainColor: #ababab;
+
+$table_footer_Border: #3d3d3d;
+$table_footer_Color: #787878;
+
+@mixin moreBtn {
+    background: linear-gradient(to right,#ff4b33 0%,#d8001f 98%);
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,&:active,&.active {
+        background: #b9001b;
+    }
+}
+@mixin linkBtn {
+    background: #ffbb17;
+    border-radius: 5px;
+    border: none;
+    color: #101010;
+    font-size: 25px;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #ff4719;
+        color: #ffffff;
+    }
+}

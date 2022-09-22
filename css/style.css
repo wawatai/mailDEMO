@@ -1,0 +1,361 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator,
+input[type=datetime-local]::-webkit-inner-spin-button,
+input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+i {
+  display: block;
+}
+
+main {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+button {
+  font-family: "微軟正黑體";
+  cursor: pointer;
+}
+
+.tableBox table .banner {
+  background: url("../images/banner.jpg") no-repeat;
+  background-size: contain;
+}
+
+.tableBox table .title::before {
+  background: url("../images/titleBG.png") no-repeat;
+  background-size: contain;
+}
+
+.tableBox table .more i {
+  background: url("../images/arrow_db_1.png") no-repeat center;
+  background-size: contain;
+}
+
+.tableBox table .linkIC_1 {
+  background: url("../images/linkIC_1.png") no-repeat;
+  background-size: contain;
+}
+
+.tableBox table .linkIC_2 {
+  background: url("../images/linkIC_2.png") no-repeat;
+  background-size: contain;
+}
+
+.tableBox table .footer .linkBox a {
+  background: url("../images/footer_linkIC.png") no-repeat;
+  background-size: 300%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  width: 100%;
+  height: 100%;
+}
+html body main {
+  width: 100%;
+  height: auto;
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px;
+}
+html body .tableBox {
+  width: 600px;
+  height: auto;
+}
+html body .tableBox table {
+  width: 100%;
+  height: auto;
+}
+html body .tableBox table tr th {
+  height: 85px;
+  background: #0d0d0d;
+}
+html body .tableBox table tr th img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body .tableBox table tr td {
+  height: auto;
+}
+html body .tableBox table tr td .banner {
+  width: 100%;
+  height: 357px;
+}
+html body .tableBox table tr td.textBox {
+  background: #ffffff;
+  padding: 40px 32px;
+}
+html body .tableBox table tr td.textBox .title {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  margin-bottom: 32px;
+}
+html body .tableBox table tr td.textBox .title::before {
+  content: "";
+  position: absolute;
+  width: 288px;
+  height: 21px;
+  left: 50%;
+  bottom: -6px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .tableBox table tr td.textBox .title p {
+  color: #0d0d0d;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+}
+html body .tableBox table tr td.textBox .content {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+html body .tableBox table tr td.textBox .content:last-child {
+  margin: 0;
+}
+html body .tableBox table tr td.textBox .content .smallTitle {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 3px #fb770a;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+}
+html body .tableBox table tr td.textBox .content .smallTitle p {
+  color: #fb770a;
+  font-size: 22px;
+  font-weight: bold;
+}
+html body .tableBox table tr td.textBox .content .text {
+  color: #424242;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+html body .tableBox table tr td.textBox .more {
+  width: 300px;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#ff4b33), color-stop(98%, #d8001f));
+  background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px auto 0;
+}
+html body .tableBox table tr td.textBox .more:hover, html body .tableBox table tr td.textBox .more:active, html body .tableBox table tr td.textBox .more.active {
+  background: #b9001b;
+}
+html body .tableBox table tr td.textBox .more i {
+  width: 13px;
+  height: 15px;
+  margin-left: 5px;
+}
+html body .tableBox table tr td.linkBox {
+  background: #0d0d0d;
+  padding: 32px;
+}
+html body .tableBox table tr td.linkBox .link {
+  width: 100%;
+  height: auto;
+  background: #1f1f1f;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 32px;
+  margin-bottom: 70px;
+}
+html body .tableBox table tr td.linkBox .link:last-child {
+  margin-bottom: 40px;
+}
+html body .tableBox table tr td.linkBox .link .linkIC_1 {
+  width: 93px;
+  height: 93px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 32px;
+}
+html body .tableBox table tr td.linkBox .link .linkIC_2 {
+  width: 96px;
+  height: 92px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 32px;
+}
+html body .tableBox table tr td.linkBox .link .textBox {
+  width: 100%;
+  height: auto;
+}
+html body .tableBox table tr td.linkBox .link .textBox p {
+  color: #ababab;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 35px;
+}
+html body .tableBox table tr td.linkBox .link .textBox p.smallTitle {
+  color: #ffffff;
+  font-size: 25px;
+}
+html body .tableBox table tr td.linkBox .link button {
+  width: 162px;
+  height: 50px;
+  background: #ffbb17;
+  border-radius: 5px;
+  border: none;
+  color: #101010;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  bottom: -30px;
+}
+html body .tableBox table tr td.linkBox .link button:hover, html body .tableBox table tr td.linkBox .link button:active, html body .tableBox table tr td.linkBox .link button.active {
+  background: #ff4719;
+  color: #ffffff;
+}
+html body .tableBox table tr td.footer {
+  background: #1e1e1e;
+  padding: 0 32px 48px;
+}
+html body .tableBox table tr td.footer .linkBox {
+  width: 100%;
+  height: 100px;
+  border-bottom: solid 1px #3d3d3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .tableBox table tr td.footer .linkBox a {
+  width: 41px;
+  height: 41px;
+  margin: 0 15px;
+}
+html body .tableBox table tr td.footer .linkBox a:nth-of-type(2) {
+  background-position-x: 50%;
+}
+html body .tableBox table tr td.footer .linkBox a:nth-of-type(3) {
+  background-position-x: 100%;
+}
+html body .tableBox table tr td.footer .content {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+html body .tableBox table tr td.footer .content p {
+  color: #787878;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+}
+html body .tableBox table tr td.footer .base {
+  color: #787878;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
